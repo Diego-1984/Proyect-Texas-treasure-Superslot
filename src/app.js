@@ -6,9 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  //write your code here
   document.querySelector("#Combination").innerHTML = generatecombination();
-  console.log("Hello Rigo from the console!");
 };
 
 let generatecombination = () => {
