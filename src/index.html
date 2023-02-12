@@ -14,8 +14,19 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="funciones.js"></script>
   </head>
+  <script>
+    function getFinalResult() {
+      let slot1 = getRandomItem(combination);
+      let slot2 = getRandomItem(combination);
+      let slot3 = getRandomItem(combination);
+      let slot4 = getRandomItem(combination);
+      let FinalResult = slot1 + slot2 + slot3 + slot4;
 
+      document.getElementById("getFinalResult").innerHTML = FinalResult;
+    }
+  </script>
   <body style="background-color: blue;">
     <div class="container text-center" style="background-color: yellow;">
       <h1 class="mt-5">
@@ -23,7 +34,11 @@
       </h1>
     </div>
     <div class="container d-flex justify-content-center">
-      <h1 id="Combination" class="mt-5" style="background-color: white;"></h1>
+      <h1
+        id="getFinalResult"
+        class="mt-5"
+        style="background-color: white;"
+      ></h1>
     </div>
     <div class="container d-flex justify-content-center mt-5">
       <input
