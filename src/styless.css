@@ -11,9 +11,19 @@ p,
 a,
 span {
   font-family: "Rye", sans-serif; /* Aplica la fuente Oswald a todos los elementos de texto */
+  
 }
-body {
-  background-image: url("https://images.app.goo.gl/8ELoABgzntzEhvxF8");
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.title {
+  color: white;
+  background-color: black;
+  font-size: 100px; /* El doble del tamaño actual */
+  
 }
 
 .fruit {
@@ -26,6 +36,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: -125px;
+  
 }
 
 my-button {
@@ -37,6 +49,7 @@ my-button {
   background: black;
   margin-left: 150px;
   margin-right: 150px;
+  margin-top: -15px;
  
 }
 
