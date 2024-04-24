@@ -10,7 +10,7 @@ h6,
 p,
 a,
 span {
-  font-family: "Rye", sans-serif; /* Aplica la fuente Oswald a todos los elementos de texto */
+  font-family: "Rye", sans-serif; 
   
 }
 body{
@@ -20,23 +20,39 @@ body{
   overflow: hidden;
 }
 .title {
-  color: white;
-  background-color: black;
-  font-size: 100px; /* El doble del tamaño actual */
-  
+  color: rgb(180, 243, 6);
+  font-size: 100px;
+  filter: drop-shadow(1px 5px 20px #e8e2ee);
+  animation: neon 2.5s ease-in-out infinite alternate;
+  -webkit-text-stroke: 0.5px white;
+  color: rgba(255, 217, 3, 0.89);
 }
 
+@keyframes neon {
+  0% {
+    filter: drop-shadow(1px 5px 20px #e8e2ee);
+  }
+  50% {
+    filter: drop-shadow(1px 5px 20px #e8e2ee) brightness(50%);
+  }
+  100% {
+    filter: drop-shadow(1px 5px 20px #e8e2ee);
+  }
+}
+
+
 .fruit {
-  font-size: 10em; /* Tamaño de fuente más grande */
+  font-size: 10em; 
 }
 
 .fruit-container {
-  margin-right: 10px; /* Espacio entre frutas */
+  margin-right: 10px; 
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   margin-top: -125px;
+  
   
 }
 

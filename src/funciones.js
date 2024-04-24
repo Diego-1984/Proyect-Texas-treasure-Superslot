@@ -5,7 +5,7 @@ function getRandomNumber(arr) {
 }
 
 function getRandomItem(array) {
-  return array[getRandomNumber(array)]; // Corregido para pasar 'array' como argumento
+  return array[getRandomNumber(array)];
 }
 
 function getSlot() {
