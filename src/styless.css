@@ -20,23 +20,23 @@ body{
   overflow: hidden;
 }
 .title {
-  color: rgb(180, 243, 6);
+  color: rgb(237, 240, 95);
   font-size: 100px;
-  filter: drop-shadow(1px 5px 20px #e8e2ee);
+  filter: drop-shadow(1px 5px 20px #d6d317);
   animation: neon 2.5s ease-in-out infinite alternate;
-  -webkit-text-stroke: 0.5px white;
-  color: rgba(255, 217, 3, 0.89);
+  -webkit-text-stroke: 0.5px rgb(248, 227, 33);
+  color: rgba(245, 172, 15, 0.89);
 }
 
 @keyframes neon {
   0% {
-    filter: drop-shadow(1px 5px 20px #e8e2ee);
+    filter: drop-shadow(1px 5px 20px #f3d83f);
   }
   50% {
-    filter: drop-shadow(1px 5px 20px #e8e2ee) brightness(50%);
+    filter: drop-shadow(1px 5px 20px #f3d83f) brightness(50%);
   }
   100% {
-    filter: drop-shadow(1px 5px 20px #e8e2ee);
+    filter: drop-shadow(1px 5px 20px #f3d83f);
   }
 }
 
@@ -96,7 +96,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, #4800ff, #1779ff);
-  animation: animate1 2s linear infinite;
+  animation: animate1 2s ;
   animation-delay: 1s;
 }
 
@@ -155,7 +155,7 @@ a:hover {
   width: 2px;
   height: 100%;
   background: linear-gradient(to top, #4800ff, #1779ff);
-  animation: animate4 2s linear infinite;
+  animation: animate4 2s;
 }
 
 @keyframes animate4 {
