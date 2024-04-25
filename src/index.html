@@ -12,74 +12,87 @@
     <script type="text/javascript" src="funciones.js"></script>
   </head>
   <body>
-    <div class="container bg-image" style="background-image: url('https://raw.githubusercontent.com/Diego-1984/Proyect-Texas-treasure-Superslot/main/src/Dallas.jpg');
-   background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; height: 625px;">
     <div
       class="container"
       style="background-color:black; justify-content: center; display: flex; margin-left: 150px; margin-right: 150px;"
     >
-      <h1 class="title">TEXAS TREASURE</h1> <!-- Agregamos la clase 'title' -->
+      <h1 class="title" style="border: 20px; border-color: blue;">
+        TEXAS TREASURE
+      </h1>
     </div>
     <div
       class="container"
-      style="justify-content: center; display: flex; background-color:black; margin-left: 150px; margin-right: 150px;""
+      style="justify-content: center; display: flex; background-color:black; margin-left: 150px; margin-right: 150px;"
     >
-      <div class="fruit-container">
-        <h1
-          id="getFinalResult1"
-          class="mt-5 fruit"
-          style="background-color: rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
-        ></h1>
-        <div class="loader" id="loader1"></div>
-      </div>
-      <div class="fruit-container">
-        <h1
-          id="getFinalResult2"
-          class="mt-5 fruit"
-          style="background-color:rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
-        ></h1>
-        <div class="loader" id="loader2"></div>
-      </div>
-      <div class="fruit-container">
-        <h1
-          id="getFinalResult3"
-          class="mt-5 fruit"
-          style="background-color: rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
-        ></h1>
-        <div class="loader" id="loader3"></div>
-      </div>
-      <div class="fruit-container">
-        <h1
-          id="getFinalResult4"
-          class="mt-5 fruit"
-          style="background-color: rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
-        ></h1>
-        <div class="loader" id="loader4"></div>
+      <div class="container" style="display: flex;">
+        <div class="fruit-container">
+          <h1
+            id="getFinalResult1"
+            class="mt-5 fruit"
+            style="background-color: rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
+          ></h1>
+          <div class="loader" id="loader1"></div>
+        </div>
+        <div class="fruit-container">
+          <h1
+            id="getFinalResult2"
+            class="mt-5 fruit"
+            style="background-color:rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
+          ></h1>
+          <div class="loader" id="loader2"></div>
+        </div>
+        <div class="fruit-container">
+          <h1
+            id="getFinalResult3"
+            class="mt-5 fruit"
+            style="background-color: rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
+          ></h1>
+          <div class="loader" id="loader3"></div>
+        </div>
+        <div class="fruit-container">
+          <h1
+            id="getFinalResult4"
+            class="mt-5 fruit"
+            style="background-color: rgb(228, 222, 222); width: 225px; border-radius: 10%; filter: drop-shadow(1px 5px 20px #fbfbfc);"
+          ></h1>
+          <div class="loader" id="loader4"></div>
+        </div>
       </div>
     </div>
     <div
       class="container"
       style="justify-content: center; display: flex;"
     ></div>
-    <div class="container">
-      <my-button>
-        <a href="#" onclick="handleClick(event)">
-          <span id="span1"></span>
-          <span id="span2"></span>
-          <span id="span3"></span>
-          <span id="span4"></span>
-          Play
-        </a>
-      </my-button>
-    </div>
+    <my-button>
+      <a href="#" onclick="handleClick(event)">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        SPIN
+      </a>
+    </my-button>
 
     <!-- Agrega el elemento de audio -->
-    <audio id="audio" src="https://drive.google.com/file/d/1b8bgNpj1JDtvxJu1mBtgZVnLxZcwErB4/view?usp=sharing" preload="auto"></audio>
+    <audio
+      id="audio"
+      src="https://drive.google.com/file/d/1b8bgNpj1JDtvxJu1mBtgZVnLxZcwErB4/view?usp=sharing"
+      preload="auto"
+    ></audio>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        // Mostrar una combinación predeterminada al cargar la página
+        document.getElementById("getFinalResult1").innerHTML =
+          "<span style='margin-left: 50px;'>💲</span>";
+        document.getElementById("getFinalResult2").innerHTML =
+          "<span style='margin-left: 50px;'>💲</span>";
+        document.getElementById("getFinalResult3").innerHTML =
+          "<span style='margin-left: 50px;'>💲</span>";
+        document.getElementById("getFinalResult4").innerHTML =
+          "<span style='margin-left: 50px;'>💲</span>";
+      });
+
       function handleClick(event) {
         event.preventDefault(); // Evitar que el formulario se envíe y la página se recargue
 

@@ -18,14 +18,21 @@ body{
   padding: 0;
   height: 100%;
   overflow: hidden;
+  background-image: url('https://raw.githubusercontent.com/Diego-1984/Proyect-Texas-treasure-Superslot/main/src/Dallas.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; height: 625px;
 }
 .title {
   color: rgb(237, 240, 95);
   font-size: 100px;
   filter: drop-shadow(1px 5px 20px #d6d317);
-  animation: neon 2.5s ease-in-out infinite alternate;
+  animation: neon 2s ease-in-out infinite alternate;
   -webkit-text-stroke: 0.5px rgb(248, 227, 33);
   color: rgba(245, 172, 15, 0.89);
+  border-right: #0531f7;
+  
 }
 
 @keyframes neon {
@@ -33,10 +40,10 @@ body{
     filter: drop-shadow(1px 5px 20px #f3d83f);
   }
   50% {
-    filter: drop-shadow(1px 5px 20px #f3d83f) brightness(50%);
+    filter: drop-shadow(1px 5px 20px #f3d83f) brightness(40%);
   }
   100% {
-    filter: drop-shadow(1px 5px 20px #f3d83f);
+    filter: drop-shadow(1px 5px 20px #f5df63);
   }
 }
 
@@ -52,6 +59,7 @@ body{
   align-items: center;
   position: relative;
   margin-top: -125px;
+  border-color: red;
   
   
 }
@@ -66,106 +74,35 @@ my-button {
   margin-left: 150px;
   margin-right: 150px;
   margin-top: -15px;
- 
+  color: red;
+   
 }
 
 a {
   top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  color: #1670f0;
+  transform: translate(-50%, -50%) perspective(1000px) rotateY(10deg);
+  color: white;
   padding: 30px 60px;
   font-size: 30px;
   letter-spacing: 2px;
   text-decoration: none;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3); /* Agregar sombra al texto */
   overflow: hidden;
+  border: 15px;
+  background-color: darkred; /* Cambiar el color de fondo a uno más oscuro */
+  border-radius: 10%;
+  border-color: black;
   margin-left: 200px;
+  
 }
+
 
 a:hover {
-  background-color: #42417c;
+  background-color: rgba(245, 3, 3, 0.966);
   color: #fff;
-  filter: drop-shadow(1px 5px 20px #0531f7);
+  filter: drop-shadow(1px 5px 0px white);
 }
 
-#span1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, #4800ff, #1779ff);
-  animation: animate1 2s ;
-  animation-delay: 1s;
-}
-
-@keyframes animate1 {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-#span2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, #4800ff, #1779ff);
-  animation: animate2 2s linear infinite;
-}
-
-@keyframes animate2 {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
-
-#span3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to left, #4800ff, #1779ff);
-  animation: animate3 2s linear infinite;
-  animation-delay: 1s;
-}
-
-@keyframes animate3 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-#span4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to top, #4800ff, #1779ff);
-  animation: animate4 2s;
-}
-
-@keyframes animate4 {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
 
 /*loader*/
 
