@@ -64,45 +64,32 @@ body{
   
 }
 
-my-button {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: -15px;
-  color: red;
-   
+@keyframes color-change {
+  0% { background-color: red; }
+  50% { background-color:darkred; }
+  100% { background-color:red; }
 }
 
 a {
-  top: 50%;
+ 
   transform: translate(-50%, -50%) perspective(1000px) rotateY(10deg);
   color: white;
   padding: 30px 60px;
   font-size: 30px;
   letter-spacing: 2px;
   text-decoration: none;
-  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3); /* Agregar sombra al texto */
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
   overflow: hidden;
-  border: 15px;
-  background-color: darkred; /* Cambiar el color de fondo a uno más oscuro */
-  border-radius: 10%;
-  border-color: black;
-  margin-left: 200px;
-  
+  border-radius: 10%;  
+  margin-left: 575px;
+  animation: color-change 2s infinite;
 }
-
 
 a:hover {
   background-color: rgba(245, 3, 3, 0.966);
   color: #fff;
   filter: drop-shadow(1px 5px 0px white);
 }
-
 
 /*loader*/
 
