@@ -58,9 +58,9 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: -125px;
-  border-color: red;
-  
+  margin-top: -160px;
+  height: 490px;
+  margin-bottom: 25px; 
   
 }
 
@@ -70,8 +70,7 @@ body{
   100% { background-color:red; }
 }
 
-a {
- 
+button {
   transform: translate(-50%, -50%) perspective(1000px) rotateY(10deg);
   color: white;
   padding: 30px 60px;
@@ -81,15 +80,20 @@ a {
   box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
   overflow: hidden;
   border-radius: 10%;  
-  margin-left: 575px;
+  margin-left: 680px;
+  margin-top: -70px;
   animation: color-change 2s infinite;
+  display: flex; 
+  font-family: "Rye", sans-serif; 
 }
 
-a:hover {
+button:hover {
   background-color: rgba(245, 3, 3, 0.966);
   color: #fff;
   filter: drop-shadow(1px 5px 0px white);
 }
+
+
 
 /*loader*/
 
